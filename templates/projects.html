@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Attractions Start -->
+        <div class="container-fluid attractions py-5" style="background-image: url('{% static 'img/black.jpeg' %}'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 2200px;">
+            <div class="container attractions-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 500px; height=900;">
+                    <h4 class="text-primary">Projects</h4>
+                    <h1 class="display-5 text-white mb-4">Explore my projects here</h1>
+                    <p class="text-white mb-0">I have created several designs in SolidWorks like banana fiber extraction machine, combing machine. Similarly I have made projects in Python like face detection Attendance System.
+                    </p>
+
+                    <h2 class="text-primary" style="margin-top: 30px; font-weight: bold; background-color: yellow; padding: 5px;">SolidWorks Projects
+                    </h2>
+                </div>
+                <style>
+.attractions-carousel {
+    max-width: 100%; /* Allow full width */
+    margin: 0 auto; /* Center it */
+}
+
+.attractions-item {
+    height: 400px; /* Set a fixed height */
+    width: 320px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow content */
+    padding: 30px; /* Add padding if needed */
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.attractions-item img {
+    width: 100%; /* Ensure the image takes the full width of the item */
+    height: 100%; /* Ensure the image takes the full height of the item */
+    object-fit: cover; /* Maintain aspect ratio, cropping as necessary */
+}
+</style>
+<!-- Carousel -->
+<div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Power Loom with video -->
+    <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+        <img src="{% static 'img/Assem1.JPG' %}" class="img-fluid rounded w-100" alt="Power Loom"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd.mp4' %}">
+        <a href="{% static 'video/vd.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> Power Loom
+        </a>
+    </div>
+
+    <!-- Spoon with video -->
+    <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
+        <img src="{% static 'img/spoon.JPG' %}" class="img-fluid rounded w-100" alt="Spoon"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd2.mp4' %}">
+        <a href="{% static 'video/name.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> Spoon
+        </a>
+    </div>
+
+    <!-- Practice with video -->
+    <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
+        <img src="{% static 'img/exam1.JPG' %}" class="img-fluid rounded w-100" alt="Exam"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd3.mp4' %}">
+        <a href="{% static 'video/vd.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> Practice
+        </a>
+    </div>
+
+    <!-- Walking Robot with video -->
+    <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
+        <img src="{% static 'img/try.JPG' %}" class="img-fluid rounded w-100" alt="Walking Robot"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd4.mp4' %}">
+        <a href="javascript:void(0)" class="attractions-name" data-bs-toggle="modal" data-bs-target="#videoModal">
+            <i class="fas fa-search-plus"></i> Walking Robot
+        </a>
+    </div>
+
+    <!-- Peeling Machine with video -->
+    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+        <img src="{% static 'img/Assem5.JPG' %}" class="img-fluid rounded w-100" alt="Peeling Machine"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd5.mp4' %}">
+        <a href="javascript:void(0)" class="attractions-name" data-bs-toggle="modal" data-bs-target="#videoModal">
+            <i class="fas fa-search-plus"></i> Peeling Machine
+        </a>
+    </div>
+</div>
+<div class="container-fluid attractions py-5" style="background-image: url('{% static 'img/black.jpeg' %}'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 600px;">
+<div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 500px; height : 800">
+                    <h4 class="text-primary"  style="font-weight: bold;  background-color: yellow; padding: 5px; ">Python Projects</h4>
+                </div>
+
+             <style>
+.attractions-carousel {
+    max-width: 100%; /* Allow full width */
+    margin: 0 auto; /* Center it */
+}
+
+.attractions-item {
+    height: 400px; /* Set a fixed height */
+    width: 320px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow content */
+    padding: 30px; /* Add padding if needed */
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.attractions-item img {
+    width: 100%; /* Ensure the image takes the full width of the item */
+    height: 100%; /* Ensure the image takes the full height of the item */
+    object-fit: cover; /* Maintain aspect ratio, cropping as necessary */
+}
+</style>
+
+
+        <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+        <img src="{% static 'img/Face.png' %}" class="img-fluid rounded w-100" alt="Face"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd.mp4' %}">
+        <a href="{% static 'video/face.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> Face Recognition Attendance Software
+        </a>
+    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="{% static 'img/spoon.JPG' %}" class="img-fluid rounded w-100" alt="spoon">
+                        <a href="{% static 'img/spoon.JPG ' %}" class="attractions-name"><i class="fas fa-search-plus"></i>spoon</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="{% static 'img/exam1.JPG' %}" class="img-fluid rounded w-100" alt="exam1">
+                        <a href="{% static 'img/exam1.JPG ' %}" class="attractions-name"><i class="fas fa-search-plus"></i>Practice</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
+                        <img src="{% static 'img/try.JPG' %}" class="img-fluid rounded w-100" alt="try">
+                        <a href="{% static 'img/try.JPG ' %}" class="attractions-name"><i class="fas fa-search-plus"></i>Walking Robot</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="{% static 'img/Assem5.JPG' %}" class="img-fluid rounded w-100" alt="Assem5">
+                        <a href="{% static 'img/Assem5.JPG ' %}" class="attractions-name"><i class="fas fa-search-plus"></i>Peeling Machine</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="container-fluid attractions py-5" style="background-image: url('{% static 'img/black.jpeg' %}'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 600px;">
+<div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 500px; height : 800">
+                    <h4 class="text-primary"  style="font-weight: bold;  background-color: yellow; padding: 5px; ">Arduino Projects</h4>
+                </div>
+
+             <style>
+.attractions-carousel {
+    max-width: 100%; /* Allow full width */
+    margin: 0 auto; /* Center it */
+}
+
+.attractions-item {
+    height: 400px; /* Set a fixed height */
+    width: 320px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow content */
+    padding: 30px; /* Add padding if needed */
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.attractions-item img {
+    width: 100%; /* Ensure the image takes the full width of the item */
+    height: 100%; /* Ensure the image takes the full height of the item */
+    object-fit: cover; /* Maintain aspect ratio, cropping as necessary */
+}
+</style>
+
+
+        <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+        <img src="{% static 'img/car.png' %}" class="img-fluid rounded w-100" alt="car"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd.mp4' %}">
+        <a href="{% static 'video/car.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> NodeMCu Controlled Car
+        </a>
+    </div>
+             <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+        <img src="{% static 'img/IRsensor.png' %}" class="img-fluid rounded w-100" alt="IRsensor"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd.mp4' %}">
+        <a href="{% static 'video/sensor.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> Car with IR Sensor
+        </a>
+    </div>
+             <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+        <img src="{% static 'img/Obstacle.jpeg' %}" class="img-fluid rounded w-100" alt="Obstacle"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd.mp4' %}">
+        <a href="{% static 'video/vd.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> Obstacle Avoiding Robot
+        </a>
+    </div>
+            <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+        <img src="{% static 'img/linefollowing.jpeg' %}" class="img-fluid rounded w-100" alt="linefollowing"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd.mp4' %}">
+        <a href="{% static 'video/vd.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> Line Following Robot
+        </a>
+    </div>
+            <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+        <img src="{% static 'img/waterlevel.jpg' %}" class="img-fluid rounded w-100" alt="Water Level Indicator"
+             data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="{% static 'video/vd.mp4' %}">
+        <a href="{% static 'video/level.mp4' %}" class="attractions-name" >
+            <i class="fas fa-search-plus"></i> Water Level Indicator
+        </a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Attractions End -->
+{% endblock %}
