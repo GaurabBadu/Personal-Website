@@ -50,11 +50,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
-                    <a href="/" class="nav-item nav-link active">Home</a>
-                    <a href="/about" class="nav-item nav-link">About</a>
-                    <a href="/projects" class="nav-item nav-link">Projects</a>
-                    <a href="/experience" class="nav-item nav-link">Experience</a>
-                    <a href="/publication" class="nav-item nav-link">Publication</a>
+                    <a href="/" class="nav-item nav-link {%if request.path == '/'%} active {%endif%}">Home</a>
+                    <a href="/about" class="nav-item nav-link {%if request.path == '/about/'%} active {%endif%} ">About</a>
+                    <a href="/projects" class="nav-item nav-link{%if request.path == '/projects/'%} active {%endif%}">Projects</a>
+                    <a href="/experience" class="nav-item nav-link {%if request.path == '/experience/'%} active {%endif%}">Experience</a>
+                    <a href="/publication" class="nav-item nav-link {%if request.path == '/publication/'%} active {%endif%}">Publication</a>
                 </div>
                 <div class="team-icon d-none d-xl-flex justify-content-center me-3">
                     <a class="btn btn-square btn-light rounded-circle mx-1" href="https://github.com/"><i class="fab fa-github"></i></a>
