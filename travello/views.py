@@ -16,5 +16,5 @@ def Experience(request):
 def Projects(request):
     return render(request, 'projects.html')
 
-def contact(request):
-    return render(request, 'contact.html')
+def publication(request):
+    return render(request, 'publication.html')

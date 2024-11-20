@@ -10,5 +10,6 @@ urlpatterns = [
     path('about/', views.About, name='about'),  # About page
     path('experience/', views.Experience, name='experience'),  # Experience page
     path('projects/', views.Projects, name='projects'),  # Projects page
+    path('publication/', views.publication, name='publication'),
     path('travello/', include('travello.urls')), # Include 'travello' app's URL
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

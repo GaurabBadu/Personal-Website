@@ -1,0 +1,58 @@
+{% extends 'base.html' %} <!-- If you're using a base template -->
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Publications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5" style="min-height: 200vh; padding-bottom: 100px;">
+        <h1 class="text-center mb-4">Publications</h1>
+
+        <!-- Section for Publications -->
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4>Design, Fabrication and Testing of Portable Hand Driven
+                            Ploughing Tool for Maize Farm</h4>
+                        <p><strong>Authors:</strong> Gaurab Badul*, Shiva Khanal2
+                            , Rajesh Tamang3
+                            , Rahul Kumar Sha Kalwar4
+                            , Lochan K. Devkota5
+                            , Sunil Adhikari6</p>
+                        <p><strong>Published In:</strong>KEC Journal of Science and Engineering, Vol. 8 Issue 1, August 2024</p>
+                        <p><strong>Abstract:</strong> This paper provides insight into the
+                            performance of portable hand-driven ploughing tools
+                            on a maize farm. The focus is on the effect of ploughing
+                            blades on the soil and aims to replace traditional ploughs
+                            like spades and hoes with hand-driven tools. The goal of
+                            this paper is to reduce human effort by showing that the
+                            working velocity of the Ploughing tool is four times that
+                            of the Traditional Tool and ensure a comfortable posture
+                            for the farmer during ploughing while also offering a
+                            simple, economical, and efficient solution for ploughing
+                            and weed removal. The hand-driven ploughing tool
+                            aims to offer a suitable mechanization option for smallscale farmers, providing a solution that satisfies their
+                            needs and labor problems. The tool features a ploughing
+                            blade with a blade angle and rake angle of 45 degrees,
+                            designed to achieve the required depth of cut for the
+                            maize farm efficiently. However, it's essential to consider
+                            potential limitations or challenges associated with using
+                            the hand-driven ploughing tool, such as its effectiveness
+                            in different soil types, the physical exertion required by
+                            the farmer, and any maintenance or durability concerns.
+                            The design and simulation of the plough are developed
+                            in SolidWorks.</p>
+                        <a href="https://www.nepjol.info/index.php/kjse/article/download/69268/52866/202426" class="btn btn-primary btn-sm" target="_blank">Read More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>
+{% endblock %}
